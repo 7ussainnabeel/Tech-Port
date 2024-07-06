@@ -424,3 +424,10 @@ footer {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
 }
+
+.statment {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
