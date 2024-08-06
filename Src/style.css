@@ -215,6 +215,26 @@ a {
 
 /* Info */
 .info {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns by default */
+  gap: 20px; /* Adjust gap between items as needed */
+}
+
+.info img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+/*
+.info {
   background: var(--primary);
   box-shadow: var(--shadow);
   display: grid;
@@ -222,7 +242,7 @@ a {
   grid-template-columns: repeat(2, 1fr);
   padding: 3rem;
 }
-
+*/
 /* Portfolio */
 .portfolio {
   display: grid;
@@ -428,17 +448,29 @@ footer {
   .main-nav ul {
     grid-template-columns: 1fr;
   }
+}
 
+@media (max-width: 900px) {
   .info {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+
+  .info img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 
   .info .btn {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin: auto;
   }
 }
+
 
 @media (max-width: 500px) {
   .top-container {
