@@ -732,6 +732,7 @@ textarea.form-control:focus {
     grid-template-areas:
       'showcase showcase'
       'top-box-a top-box-b top-box-c top-box-d top-box-e top-box-f';
+
   }
 
   .showcase h1 {
@@ -771,6 +772,20 @@ textarea.form-control:focus {
       'top-box-a'
       'top-box-b';
   }
+  .top-container-sr {
+    grid-template-areas:
+      'showcase'
+      'top-box-asr'
+      'top-box-bsr'
+      'top-box-csr'
+      'top-box-dsr'
+      'top-box-esr'
+      'top-box-fsr';
+      text-align: center;
+  }
+  .img {
+    max-width: fit-content;
+  }
 }
 /* footer */
 
@@ -806,6 +821,7 @@ textarea.form-control:focus {
 }
 
 /* Contact Form */
+
 @media (max-width: 600px) {
   .form {
     width: 90%;
