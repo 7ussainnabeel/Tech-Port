@@ -590,7 +590,6 @@ h3 {
   line-height: 1.467;
   padding: 4px;
   height: 42px;
-  -webkit-appearance: none;
 }
 
 input,
@@ -799,7 +798,7 @@ textarea.form-control:focus {
 }
 @media (max-width: 767px) {
   .social-icons li.title {
-    display: flex;
+    display: inline-block;
     margin-right: 0;
     font-weight: 600;
   }
@@ -817,6 +816,21 @@ textarea.form-control:focus {
 
   .site-footer .copyright-text {
     text-align: center;
+  }
+}
+@media (max-width:767){
+  .col {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: flex;
+    width: 80%;
+  }
+  
+  .col2,
+  .col3 {
+    background-color: #121212;
+    border-radius: 20px;
   }
 }
 
