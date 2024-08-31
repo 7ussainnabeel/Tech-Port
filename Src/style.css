@@ -731,7 +731,7 @@ textarea.form-control:focus {
   .top-container {
     grid-template-areas:
       'showcase showcase'
-      'top-box-a top-box-b top-box-c top-box-d top-box-e top-box-f';
+      'top-box-a top-box-b';
 
   }
 
@@ -765,13 +765,7 @@ textarea.form-control:focus {
   }
 }
 
-@media (max-width: 500px) {
-  .top-container {
-    grid-template-areas:
-      'showcase'
-      'top-box-a'
-      'top-box-b';
-  }
+@media(max-width: 600px) {
   .top-container-sr {
     grid-template-areas:
       'showcase'
@@ -783,8 +777,14 @@ textarea.form-control:focus {
       'top-box-fsr';
       text-align: center;
   }
-  .img {
-    max-width: fit-content;
+}
+
+@media (max-width: 500px) {
+  .top-container {
+    grid-template-areas:
+      'showcase'
+      'top-box-a'
+      'top-box-b';
   }
 }
 /* footer */
