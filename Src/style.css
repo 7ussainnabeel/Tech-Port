@@ -691,13 +691,13 @@ textarea.form-control:focus {
 /* ================================= 
   Media Queries
 ==================================== */
-
+/*
 @media screen and (max-width: 1000px) {
   :root {
     --m: 3rem;
   }
 }
-
+*/
 
 @media (min-width: 769px) {
 
