@@ -831,6 +831,7 @@ textarea.form-control:focus {
   .col3 {
     background-color: #121212;
     border-radius: 20px;
+    width: 80%;
   }
 }
 
