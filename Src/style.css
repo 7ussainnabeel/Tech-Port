@@ -779,6 +779,7 @@ textarea.form-control:focus {
     flex-direction: column;
     margin: 0px;
     padding:0px;
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 767px) {
