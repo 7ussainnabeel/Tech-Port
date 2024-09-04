@@ -57,9 +57,17 @@ ul {
 }
 
 h2,
-h3,
 a {
   color: #246fbb;
+}
+
+h3 {
+  color: #246fbb;
+  text-align: center; /* Centers the text horizontally */
+  display: flex; /* Ensure it's a flex container */
+  justify-content: center; /* Center horizontally in flex */
+  align-items: center; /* Center vertically in flex (if needed) */
+  margin: 0 auto; /* Optional: Centers the h3 block within its container if it's a block-level element */
 }
 
 a {
@@ -86,7 +94,7 @@ a {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .navbar-brand {
@@ -139,7 +147,7 @@ a {
 }
 
 .navbar-menu li a:hover {
-    color: #718daa;
+  color: #246fbb;
 }
 
 /* Top Container */
