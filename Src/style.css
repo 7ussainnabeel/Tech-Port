@@ -70,27 +70,74 @@ a {
   margin: 0;
   font-size: 1.45em;
 }
-
-.main-nav {
-  margin-top: 5px;
-
-}
-
-.logo a,
-.main-nav a {
+.logo a{
   padding: 10px 15px;
   text-transform: uppercase;
   text-align: center;
   display: block;
+  align-items: center;
+  margin-left: auto;
 }
 
-.main-nav a {
-  color: #34495e;
+.navbar {
+  background-color: #f4f4f4;
+  color: #fff;
+  padding: 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand a {
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar-toggle {
+  background-color: transparent;
+  border: none;
+  color: var(--dark);
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  padding-right: 20px;
+}
+
+.navbar-menu {
+  margin: 0;
+    padding: 0;
+    display: flex;
+    width: 0%;
+    margin-left: auto
+}
+
+.navbar-menu li {
+  margin: 0 20px;
+  background-color: transparent;
+  height: auto;
+  padding: 10px;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
   font-size: .99em;
 }
 
-.main-nav a:hover {
-  color: #718daa;
+.navbar-menu li a {
+  color: var(--dark);
+  font-size: .99em;
+}
+
+.navbar-menu li a:hover {
+    color: #718daa;
 }
 
 /* Top Container */
@@ -743,6 +790,38 @@ textarea.form-control:focus {
   }
 }
 
+@media (max-width: 768px) {
+  .navbar-menu {
+      display: none; /* Hidden by default */
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      text-align: center;
+      color:var(--dark);
+      background-color: #f4f4f4;
+  }
+
+  .navbar-menu.show {
+      display: flex; /* Display when toggled */
+  }
+
+  .navbar-toggle {
+      display: block; /* Show toggle button */
+  }
+  .navbar {
+    background-color: #f4f4f4;
+    color: #fff;
+    padding: 0px;
+    display: block;
+    position: relative;
+  }
+  .navbar-brand{
+    justify-content: space-between;
+  }
+}
+
 @media (max-width: 900px) {
   .info {
     grid-template-columns: 1fr; /* Single column on mobile */
@@ -824,14 +903,14 @@ textarea.form-control:focus {
     align-items: flex-start;
     justify-content: flex-start;
     padding: flex;
-    width: 80%;
+    width: 85%;
   }
   
   .col2,
   .col3 {
     background-color: #121212;
     border-radius: 20px;
-    width: 80%;
+    width: 85%;
   }
 }
 
