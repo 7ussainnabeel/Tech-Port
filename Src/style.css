@@ -55,6 +55,14 @@ ul {
   padding: 0;
   list-style: none;
 }
+h1{
+  color: #246fbb;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 
 h2,
 a {
@@ -63,11 +71,11 @@ a {
 
 h3 {
   color: #246fbb;
-  text-align: center; /* Centers the text horizontally */
-  display: flex; /* Ensure it's a flex container */
-  justify-content: center; /* Center horizontally in flex */
-  align-items: center; /* Center vertically in flex (if needed) */
-  margin: 0 auto; /* Optional: Centers the h3 block within its container if it's a block-level element */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 a {
@@ -78,7 +86,8 @@ a {
   margin: 0;
   font-size: 1.45em;
 }
-.logo a{
+
+.logo a {
   padding: 10px 15px;
   text-transform: uppercase;
   text-align: center;
@@ -114,7 +123,8 @@ a {
   color: var(--dark);
   font-size: 24px;
   cursor: pointer;
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   padding-right: 20px;
 }
 
@@ -273,8 +283,10 @@ a {
 /* Info */
 .info {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns by default */
-  gap: 20px; /* Adjust gap between items as needed */
+  grid-template-columns: 1fr 1fr;
+  /* Two columns by default */
+  gap: 20px;
+  /* Adjust gap between items as needed */
 }
 
 .info img {
@@ -300,6 +312,47 @@ a {
   grid-template-columns: repeat(2, 1fr);
   padding: 3rem;
 }
+
+/* Our Mission page */
+/* Our Statement */
+.ourmission {
+  display: grid;
+  gap: 20px;
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+.Statement {
+  grid-column: span 2; /* Make the statement span both columns */
+  text-align: center; /* Center text horizontally */
+  width: 100%;
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  padding: 2em;
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 100%; /* Optional: Ensure the height allows for vertical centering */
+}
+.Statement p {
+  text-align: center;
+  align-content: center;
+  justify-items: center;
+}
+.our-mission {
+  text-align: center;
+  padding: 5rem;
+}
+
+.mission .vision {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+}
+
 
 /* Portfolio */
 .portfolio {
@@ -409,7 +462,7 @@ footer {
 
 .copyright-text {
   margin: flex;
-  color:var(--light);
+  color: var(--light);
 }
 
 
@@ -802,24 +855,28 @@ textarea.form-control:focus {
 
 @media (max-width: 768px) {
   .navbar-menu {
-      display: none; /* Hidden by default */
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 50px;
-      left: 0;
-      text-align: center;
-      color:var(--dark);
-      background-color: #f4f4f4;
+    display: none;
+    /* Hidden by default */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    text-align: center;
+    color: var(--dark);
+    background-color: #f4f4f4;
   }
 
   .navbar-menu.show {
-      display: flex; /* Display when toggled */
+    display: flex;
+    /* Display when toggled */
   }
 
   .navbar-toggle {
-      display: block; /* Show toggle button */
+    display: block;
+    /* Show toggle button */
   }
+
   .navbar {
     background-color: #f4f4f4;
     color: #fff;
@@ -827,14 +884,16 @@ textarea.form-control:focus {
     display: block;
     position: relative;
   }
-  .navbar-brand{
+
+  .navbar-brand {
     justify-content: space-between;
   }
 }
 
 @media (max-width: 900px) {
   .info {
-    grid-template-columns: 1fr; /* Single column on mobile */
+    grid-template-columns: 1fr;
+    /* Single column on mobile */
   }
 
   .info img {
@@ -863,7 +922,7 @@ textarea.form-control:focus {
       'top-box-dsr'
       'top-box-esr'
       'top-box-fsr';
-      text-align: center;
+    text-align: center;
   }
 }
 
@@ -875,16 +934,18 @@ textarea.form-control:focus {
       'top-box-b';
   }
 }
+
 /* footer */
 
 @media screen and (max-width: 768px) {
   footer {
     flex-direction: column;
     margin: 0px;
-    padding:0px;
+    padding: 0px;
     padding-bottom: 20px;
   }
 }
+
 @media (max-width: 767px) {
   .social-icons li.title {
     display: inline-block;
@@ -892,6 +953,7 @@ textarea.form-control:focus {
     font-weight: 600;
   }
 }
+
 @media (max-width: 991px) {
   .site-footer [class^="col-"] {
     margin-bottom: 30px;
@@ -907,7 +969,8 @@ textarea.form-control:focus {
     text-align: center;
   }
 }
-@media (max-width: 900px){
+
+@media (max-width: 900px) {
   .col {
     flex-direction: column;
     align-items: flex-start;
@@ -915,7 +978,7 @@ textarea.form-control:focus {
     padding: flex;
     width: 85%;
   }
-  
+
   .col2,
   .col3 {
     background-color: #121212;
@@ -932,4 +995,3 @@ textarea.form-control:focus {
     margin-top: 12%;
   }
 }
-
