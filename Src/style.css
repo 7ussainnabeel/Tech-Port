@@ -322,36 +322,38 @@ a {
   box-shadow: var(--shadow);
   grid-template-columns: repeat(2, 1fr);
   padding: 3rem;
+  align-items: center;
+  justify-content: center;
 }
+
 .Statement {
-  grid-column: span 2; /* Make the statement span both columns */
-  text-align: center; /* Center text horizontally */
+  grid-column: span 2; /* Span both columns */
   width: 100%;
   background: var(--primary);
   box-shadow: var(--shadow);
   padding: 2em;
   display: flex; /* Use flexbox for centering */
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
-  height: 100%; /* Optional: Ensure the height allows for vertical centering */
+  align-items: center;
+  justify-content: center;
 }
+
 .Statement p {
   text-align: center;
-  align-content: center;
-  justify-items: center;
 }
+
 .our-mission {
   text-align: center;
   padding: 5rem;
 }
 
-.mission .vision {
+/* Assuming .mission and .vision are separate classes */
+.mission, .vision {
   text-align: center;
   width: 100%;
   margin: 0;
   padding: 1em;
 }
+
 
 
 /* Portfolio */
